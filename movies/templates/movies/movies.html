@@ -7,11 +7,12 @@
 </head>
 <body>
     <h1>Movies</h1>
-        
-    {% for movie in movies %}
-        <li>{{movie.title}}</li>
-    {% endfor %}    
-
-</body>``
+    <ul>    
+        {% for movie in movies %}
+            <li><a href={{movie.id}}>{{movie.title}}</a></li>
+        {% endfor %}    
+    </ul>
+    <a href='/movies/add'>Add a Movie</a>
+</body>
 </html>
 
